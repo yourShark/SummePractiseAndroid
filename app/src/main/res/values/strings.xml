@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">SummePractiseAndroid</string>
+    <string name="app_name">HomeworkOne</string>
+    <string name="name">Имя</string>
+    <string name="height">Рост</string>
+    <string name="weight">Вес</string>
+    <string name="age">Возраст</string>
+    <string name="count">Подсчет</string>
+    <string name="formula">Формула расчета: \n88.36 + (13.4 * weight) +(4.8 * height) - (5.7 * age) + length name</string>
+    <string name="normaKk">Подсчет суточной нормы калорий</string>
 </resources>
