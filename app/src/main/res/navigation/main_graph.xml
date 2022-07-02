@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.summepractiseandroid.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.summepractiseandroid.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.summepractiseandroid.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.summepractiseandroid.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/action_videoFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unactiveFragment"
+        android:name="com.example.summepractiseandroid.UnactiveFragment"
+        android:label="fragment_unactive"
+        tools:layout="@layout/fragment_unactive" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.summepractiseandroid.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment" />
+    </fragment>
+</navigation>
