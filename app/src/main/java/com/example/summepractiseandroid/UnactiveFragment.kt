@@ -11,20 +11,22 @@ class UnactiveFragment : Fragment(R.layout.fragment_unactive) {
         super.onViewCreated(view, savedInstanceState)
         val text = arguments?.getString(ARG_TEXT.orEmpty())
 
-        if(text != null){
-            if(text.isNotEmpty()){
-                Snackbar.make(view,text,Snackbar.LENGTH_LONG).show()
+        if(text != null) {
+            if (text.isNotEmpty()) {
+                Snackbar.make(view, text, Snackbar.LENGTH_LONG).show()
             }
         }
-
     }
-    companion object{
-        private const val ARG_TEXT = "amaizing"
 
-        fun createBundle(text:String): Bundle{
+    companion object {
+
+        private const val ARG_TEXT = "amazing"
+
+        fun createBundle(text: String): Bundle {
             val bundle = Bundle()
             bundle.putString(
-                ARG_TEXT, text
+                ARG_TEXT,
+                text
             )
             return bundle
         }

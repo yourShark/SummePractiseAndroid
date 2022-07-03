@@ -10,6 +10,7 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
     private var _binding: FragmentMusicBinding? = null
     private val binding get() = _binding!!
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentMusicBinding.bind(view)
@@ -17,8 +18,8 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
         with(binding) {
             btnUnactive.setOnClickListener {
                 findNavController().navigate(
-                    R.id.action_musicFragment_to_unactiveFragment2,
-                    UnactiveFragment.createBundle((tvMusic.text?:"Error").toString()))
+                    R.id.action_musicFragment_to_unactiveFragment,
+                    UnactiveFragment.createBundle((tvMusic.text ?: "Error").toString()))
             }
         }
     }

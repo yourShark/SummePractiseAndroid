@@ -10,6 +10,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentMainBinding.bind(view)
@@ -17,8 +18,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         with(binding) {
             btnUnactive.setOnClickListener {
                 findNavController().navigate(
-                    R.id.action_mainFragment_to_unactiveFragment2,
-                    UnactiveFragment.createBundle((tvMain.text?:"Error").toString()))
+                    R.id.action_mainFragment_to_unactiveFragment,
+                    UnactiveFragment.createBundle((tvMain.text ?: "Error").toString()))
             }
         }
     }
@@ -27,4 +28,5 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         _binding = null
         super.onDestroyView()
     }
+
 }
