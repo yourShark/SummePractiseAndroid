@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.summepractiseandroid.databinding.FragmentSettingBinding
 
-class SettingFragment : Fragment() {
+class SettingFragment : Fragment(R.layout.fragment_setting) {
 
     private var _binding: FragmentSettingBinding? = null
     private val binding get() = _binding!!
@@ -20,7 +20,7 @@ class SettingFragment : Fragment() {
         with(binding) {
             btnUnactive.setOnClickListener {
                 findNavController().navigate(
-                    R.id.settingFragment,
+                    R.id.action_settingFragment_to_unactiveFragment2,
                     UnactiveFragment.createBundle((tvSetting.text?:"Error").toString()))
             }
         }

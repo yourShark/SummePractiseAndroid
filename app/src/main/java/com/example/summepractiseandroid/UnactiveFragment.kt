@@ -9,7 +9,7 @@ class UnactiveFragment : Fragment(R.layout.fragment_unactive) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = arguments?.getString(ARG_TEXT)
+        val text = arguments?.getString(ARG_TEXT.orEmpty())
 
         if(text != null){
             if(text.isNotEmpty()){

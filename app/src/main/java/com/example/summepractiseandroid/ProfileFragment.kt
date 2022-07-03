@@ -17,7 +17,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         with(binding) {
             btnUnactive.setOnClickListener {
                 findNavController().navigate(
-                    R.id.profileFragment,
+                    R.id.action_profileFragment_to_unactiveFragment2,
                     UnactiveFragment.createBundle((tvProfile.text?:"Error").toString()))
             }
         }

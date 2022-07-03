@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.summepractiseandroid.databinding.FragmentVideoBinding
 
-class VideoFragment : Fragment() {
+class VideoFragment : Fragment(R.layout.fragment_video) {
 
     private var _binding: FragmentVideoBinding? = null
     private val binding get() = _binding!!
@@ -20,7 +20,7 @@ class VideoFragment : Fragment() {
         with(binding) {
             btnUnactive.setOnClickListener {
                 findNavController().navigate(
-                    R.id.videoFragment,
+                    R.id.action_videoFragment_to_unactiveFragment2,
                     UnactiveFragment.createBundle((tvVideo.text?:"Error").toString()))
             }
         }

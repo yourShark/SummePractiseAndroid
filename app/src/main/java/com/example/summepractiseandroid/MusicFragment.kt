@@ -17,7 +17,7 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
         with(binding) {
             btnUnactive.setOnClickListener {
                 findNavController().navigate(
-                    R.id.musicFragment,
+                    R.id.action_musicFragment_to_unactiveFragment2,
                     UnactiveFragment.createBundle((tvMusic.text?:"Error").toString()))
             }
         }

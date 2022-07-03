@@ -17,7 +17,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         with(binding) {
             btnUnactive.setOnClickListener {
                 findNavController().navigate(
-                    R.id.mainFragment,
+                    R.id.action_mainFragment_to_unactiveFragment2,
                     UnactiveFragment.createBundle((tvMain.text?:"Error").toString()))
             }
         }
